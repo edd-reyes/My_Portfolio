@@ -352,15 +352,18 @@
         </div>
 
         <div id="contactForm" style="display: none">
-          <form>
+          <form
+            action="https://formsubmit.co/a8891d18a4c0818fafe3f3deca5defb8"
+            method="POST"
+          >
             <label for="Name">Name:</label>
-            <input type="text" /><br /><br />
+            <input id="name" name="Name" type="text" /><br /><br />
             <label for="email">Email:</label>
-            <input type="email" /><br /><br />
+            <input id="email" name="Email" type="email" /><br /><br />
             <label for="subject">Subject:</label>
-            <input type="text" /><br /><br />
+            <input id="subject" name="Subject" type="text" /><br /><br />
             <label for="message">Message:</label><br />
-            <textarea name="message" id="" cols="30" rows="7"></textarea
+            <textarea name="Message" id="message" cols="30" rows="7"></textarea
             ><br /><br />
 
             <button type="submit" value="Submit" id="sendBtn">Send</button>
@@ -469,6 +472,7 @@
       AOS.init({ duration: 500, easing: "ease-in-out" });
     </script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!--  custom -->
     <script src="./js/scripts.js"></script>
   </body>

@@ -351,6 +351,7 @@ span {
 }
 
 #contactForm {
+  margin: 10px 0;
   input,
   textarea {
     background-color: $background-color;
@@ -363,6 +364,14 @@ span {
   label {
     color: $highlight;
     font-family: $font-fam-3;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+  }
+  button {
+    align-self: center;
   }
 }
 
