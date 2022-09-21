@@ -368,7 +368,6 @@ span {
   form {
     display: flex;
     flex-direction: column;
-
   }
   button {
     align-self: center;
@@ -418,4 +417,37 @@ footer {
   width: 50%;
   margin: 20px auto;
   gap: 20px;
+}
+
+.mymail::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: $semi-highlight;
+}
+
+.mymail {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 50px;
+  z-index: 10;
+
+  a {
+    text-decoration: none;
+    color: $semi-highlight;
+    font-family: $font-fam-3;
+    margin: 20px auto;
+    padding: 10px;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+  }
+  
+}
+
+.mymail a:hover{
+  color: $highlight
 }
