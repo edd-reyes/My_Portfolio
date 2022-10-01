@@ -315,8 +315,9 @@
               <h3><span>Camare Events</span></h3>
               <br />
               <p>
-                An events catering service dedicated to give clients an
-                exceptional and stress free events planning and execution.
+                An example of an events catering service dedicated to give
+                clients an exceptional and stress free events planning and
+                execution.
               </p>
               <p>
                 Skills used: <small>HTML</small> <small>CSS</small>
@@ -345,6 +346,28 @@
               </p>
             </div>
           </div>
+
+          <div class="camareCakes mb-5" data-aos="fade-right">
+            <div class="projectDescription">
+              <h3><span>Camare Cakes</span></h3>
+              <br />
+              <p>
+                An e-commerce web page that serves cakes to its clients. Created
+                through React JS, Node, Express and MySQL.
+              </p>
+              <p>
+                Skills used: <small>React JS</small> <small>Material UI</small>
+                <small>Bootstrap</small> <small>Sass</small> <small>Node</small> <br />
+                <small>Express</small> <small>MySQL</small>
+                <small>Heroku</small> <small>AWS</small> <small>Vercel</small>
+              </p>
+            </div>
+            <div class="projectImg">
+              <a href="https://camareshop-exvwg08fj-khrys24.vercel.app/"
+                ><img src="./images/Camare_Cakes.png" alt="camarecakes"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -361,7 +384,7 @@
         </div>
 
         <div id="contactForm" style="display: none">
-          <form
+          <!-- <form
             action="https://formsubmit.co/a8891d18a4c0818fafe3f3deca5defb8"
             method="POST"
           >
@@ -376,14 +399,39 @@
             ><br /><br />
 
             <button type="submit" value="Submit" id="sendBtn">Send</button>
+          </form> -->
+          <form id="form">
+            
+              <label for="from_name">Name:</label>
+              <input type="text" name="from_name" id="from_name" />
+            
+            
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" />
+            
+            
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject" id="subject" />
+            
+            
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="7"
+              ></textarea>
+            
+
+              <input type="submit" id="button" value="Send Email" class="sendBtn">
           </form>
         </div>
       </div>
-      <div class="mymail">
+      <!-- <div class="mymail">
         <a href="mailto:pedroeddie.reyes@gmail.com" target="_blank"
           >pedroeddie.reyes@gmail.com</a
         >
-      </div>
+      </div> -->
     </main>
 
     <footer>
@@ -487,6 +535,16 @@
     </script>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("f4MYxRO6C8mdNForK");
+    </script>
+
     <!--  custom -->
     <script src="./js/scripts.js"></script>
   </body>
