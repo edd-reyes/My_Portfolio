@@ -110,6 +110,11 @@ span {
   width: 70%;
 }
 
+@media screen and (max-width: 769px) {
+  #hero p {
+    width: 100%;
+  }
+}
 .heading {
   color: lightgray;
 }
@@ -132,7 +137,7 @@ span {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #about {
     display: grid;
     grid-template-columns: 1fr;
@@ -148,6 +153,11 @@ span {
   align-items: center;
 }
 
+@media screen and (max-width: 769px) {
+  .myPhoto {
+    margin: auto;
+  }
+}
 .myPhoto img {
   height: 225px;
   border-radius: 5px;
@@ -224,8 +234,8 @@ span {
   padding: 20px 0;
 }
 .projectsMade img {
-  height: 250px;
-  width: 500px;
+  max-height: 250px;
+  max-width: 500px;
   border-radius: 15px;
   box-shadow: 10px 10px 5px 0px rgba(0, 225, 255, 0.5);
   opacity: 40%;
@@ -243,6 +253,17 @@ span {
   justify-content: center;
 }
 
+@media screen and (max-width: 700px) {
+  .projectImg img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .projectImg img {
+    height: 175px;
+    width: auto;
+  }
+}
 .petCorner {
   display: grid;
   grid-template-areas: "projectImg projectDescription";
@@ -260,14 +281,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .petCornerImg img {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .projectImg img {
-    height: 250px;
   }
 }
 .camareEvents {
@@ -288,14 +301,6 @@ span {
     flex-direction: column;
     align-items: center;
   }
-  .camareEventsImg img {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .camareEventsImg img {
-    height: 250px;
-  }
 }
 .calculator {
   display: grid;
@@ -315,13 +320,25 @@ span {
     flex-direction: column;
     align-items: center;
   }
-  .calculatorImg img {
-    height: 300px;
-  }
 }
-@media screen and (max-width: 768px) {
-  .calculatorImg img {
-    height: 250px;
+.camareCakes {
+  display: grid;
+  grid-template-areas: "projectDescription projectImg";
+  gap: 30px;
+  padding: 10px 0 50px 0;
+}
+.camareCakes small {
+  border: 0.5px solid #8892b0;
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 1175px) {
+  .camareCakes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .contactHead {
@@ -454,33 +471,4 @@ footer {
 
 .mymail a:hover {
   color: rgb(100, 205, 218);
-}
-
-.camareCakes {
-  display: grid;
-  grid-template-areas: "projectDescription projectImg";
-  gap: 30px;
-  padding: 10px 0 50px 0;
-}
-.camareCakes small {
-  border: 0.5px solid #8892b0;
-  border-radius: 5px;
-  padding: 5px;
-  line-height: 2.5rem;
-}
-
-@media screen and (max-width: 1175px) {
-  .camareCakes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .camareCakesImg img {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .camareEventsImg img {
-    height: 250px;
-  }
 }/*# sourceMappingURL=main.css.map */

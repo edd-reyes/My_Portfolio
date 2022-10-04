@@ -31,7 +31,7 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  nav{
+  nav {
     margin: 0;
     width: 100%;
   }
@@ -106,6 +106,12 @@ span {
   }
 }
 
+@media screen and (max-width: 769px) {
+  #hero p {
+    width: 100%;
+  }
+}
+
 .heading {
   color: lightgray;
 }
@@ -130,7 +136,7 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #about {
     display: grid;
     grid-template-columns: 1fr;
@@ -145,6 +151,12 @@ span {
 .myPhoto {
   padding-top: 90px;
   align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+  .myPhoto {
+    margin: auto;
+  }
 }
 
 .myPhoto img {
@@ -214,8 +226,8 @@ span {
 .projectsMade {
   padding: 20px 0;
   img {
-    height: 250px;
-    width: 500px;
+    max-height: 250px;
+    max-width: 500px;
     border-radius: 15px;
     box-shadow: $box-shadow2;
     opacity: 40%;
@@ -232,6 +244,19 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .projectImg img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .projectImg img {
+    height: 175px;
+    width: auto;
+  }
 }
 
 .petCorner {
@@ -252,16 +277,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .petCornerImg img {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .projectImg img {
-    height: 250px;
   }
 }
 
@@ -284,16 +299,6 @@ span {
     flex-direction: column;
     align-items: center;
   }
-
-  .camareEventsImg img {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .camareEventsImg img {
-    height: 250px;
-  }
 }
 
 .calculator {
@@ -315,15 +320,27 @@ span {
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .calculatorImg img {
-    height: 300px;
+.camareCakes {
+  display: grid;
+  grid-template-areas: "projectDescription projectImg";
+  gap: 30px;
+  padding: 10px 0 50px 0;
+
+  small {
+    border: 0.5px solid $semi-highlight;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 2.5rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .calculatorImg img {
-    height: 250px;
+@media screen and (max-width: 1175px) {
+  .camareCakes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -454,42 +471,8 @@ footer {
     writing-mode: vertical-rl;
     letter-spacing: 0.1em;
   }
-  
 }
 
-.mymail a:hover{
-  color: $highlight
-}
-
-
-.camareCakes {
-  display: grid;
-  grid-template-areas: "projectDescription projectImg";
-  gap: 30px;
-  padding: 10px 0 50px 0;
-
-  small {
-    border: 0.5px solid $semi-highlight;
-    border-radius: 5px;
-    padding: 5px;
-    line-height: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 1175px) {
-  .camareCakes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .camareCakesImg img {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .camareEventsImg img {
-    height: 250px;
-  }
+.mymail a:hover {
+  color: $highlight;
 }
