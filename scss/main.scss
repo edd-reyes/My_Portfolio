@@ -8,6 +8,7 @@
 body {
   background-color: $background-color;
   line-height: 1.7rem;
+  align-self: center;
 }
 
 main {
@@ -30,7 +31,7 @@ nav {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   nav {
     margin: 0;
     width: 100%;
@@ -68,6 +69,17 @@ span {
   transition: 0.2s ease;
   color: white;
   font-weight: bold;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: $highlight;
+    color: white;
+  }
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -254,7 +266,7 @@ span {
 
 @media screen and (max-width: 426px) {
   .projectImg img {
-    height: 175px;
+    height: 170px;
     width: auto;
   }
 }
@@ -445,7 +457,7 @@ footer {
   gap: 20px;
 }
 
-.mymail::after {
+/* .mymail::after {
   content: "";
   display: block;
   width: 1px;
@@ -475,4 +487,4 @@ footer {
 
 .mymail a:hover {
   color: $highlight;
-}
+} */
